@@ -48,18 +48,18 @@ employee = Employee('John', 'Doe', 25)
 employee.save()
 
 # Get all employees
-employees = Employee.get_all()
+employees = Employee.all()
 
 # Get a single employee by id and update it
-employee = Employee.get_by_id(1) 
+employee = Employee.get(1) 
 employee.name = 'Jane'
 employee.update()
 
 # get all employees with age name, surname and age filters
-all_employees = Employee.get_all(name='John', surname='Doe', age=25)
+all_employees = Employee.all(name='John', surname='Doe', age=25)
 
 # delete an employee by id
-employee = Employee.get_by_id(1)
+employee = Employee.get(1)
 employee.delete()
 ```
 
