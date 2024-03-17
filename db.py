@@ -12,5 +12,3 @@ CREATE TABLE IF NOT EXISTS employee(
     age INTEGER
 )
 """)
-
-conn.commit()

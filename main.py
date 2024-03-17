@@ -7,13 +7,10 @@ if first_user is None:
     first_user = Employee("name", "surname", "age")
     first_user.save()
 
-first_user.name = "Tornike"
-first_user.age = 25
-first_user.save()
 
 all_employee = Employee.all(
     name="Tornike",
-    surname="surname",
+    surname="Sharvadze",
     age=26
 )
 
